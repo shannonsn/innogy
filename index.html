@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Plumber App</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- handlebars- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+    <!--  bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--jquery for using ajax   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+
+        <div class="">
+            <h1 class="">hello world</h1>
+        </div>
+        <div class="conatainer">
+            <div class="row ">
+                <form class="" action="index.html" method="post">
+                    <label for="">please register a new plumber:</label>
+                    <input class="form-control" type="text" id="firstName" name="firstName" value="" onchange="" placeholder="firstname"><br>
+                    <input class="form-control" type="text" id="lastName" name="lastName" value="" placeholder="lastname"><br>
+                    <input class="form-control" type="text" id="contactDetails" name="contactDetails" value="" placeholder="contact number"><br>
+                    <input class="form-control" type="email" id="email" name="email" value="" placeholder="email"><br>
+                    <button class="submit btn btn-outline-primary" id="submit" type="button" name="button">submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-5">
+                <h5>please select day to work</h5>
+                <form class="" action="index.html" method="post">
+                    <input type="checkbox" name="" value=""> Monday <br>
+                    <input type="checkbox" name="" value=""> Tuesday <br>
+                    <input type="checkbox" name="" value=""> Wednesday <br>
+                    <input type="checkbox" name="" value=""> Thursday <br>
+                    <input type="checkbox" name="" value=""> Friday <br>
+                    <input type="checkbox" name="" value=""> Saturday <br>
+                    <input type="checkbox" name="" value=""> Sunday <br>
+
+                    <div class="">
+                        <h5>please select a slot</h5>
+
+                            <input type="radio" name="slot" value=""> Morning<br>
+                            <input type="radio" name="slot" value=""> Midday<br>
+                            <input type="radio" name="slot" value=""> Afternoon<br>
+
+                            <br>
+
+                            <input class="form-control" type="text" id="jobDescription" name="jobDescription" value="" placeholder="job description"><br>
+                            <input class="form-control" type="text" id="employerName" name="employerName" value="" placeholder="employer name"><br>
+                            <input class="form-control" type="text" id="employerContact" name="employerContact" value="" placeholder="employer contact"><br>
+                    </div>
+
+                    <button class="schedule btn btn-outline-primary" type="button" name="button">schedule</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+
+<br>
+
+</html>
