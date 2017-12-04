@@ -82,7 +82,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Hire a plumber </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -95,21 +95,20 @@
                       <h3>Hire a plumber here</h3>
                       <h5>please select day to work</h5>
                       <form class="" action="index.html" method="post">
-                          <input type="checkbox" class="day" value="Monday"> Monday <br>
-                          <input type="checkbox" class="day" value="Tuesday"> Tuesday <br>
-                          <input type="checkbox" class="day" value="Wednesday"> Wednesday <br>
-                          <input type="checkbox" class="day" value="Thursday"> Thursday <br>
-                          <input type="checkbox" class="day" value="Friday"> Friday <br>
-                          <input type="checkbox" class="day" value="Saturday"> Saturday <br>
-                          <input type="checkbox" class="day" value="Sunday"> Sunday <br>
+                          <input type="checkbox" class="day" value="Monday"> Monday<br>
+                          <input type="checkbox" class="day" value="Tuesday"> Tuesday<br>
+                          <input type="checkbox" class="day" value="Wednesday"> Wednesday<br>
+                          <input type="checkbox" class="day" value="Thursday"> Thursday<br>
+                          <input type="checkbox" class="day" value="Friday"> Friday<br>
+                          <input type="checkbox" class="day" value="Saturday"> Saturday<br>
+                          <input type="checkbox" class="day" value="Sunday"> Sunday<br>
 
                           <div class="">
                               <h5>please select a slot</h5>
 
-                                  <input type="radio" class="slot" value="Morning"> Morning<br>
-                                  <input type="radio" class="slot" value="Midday"> Midday<br>
-                                  <input type="radio" class="slot" value="Afternoon"> Afternoon<br>
-
+                                  <input type="radio" name="slot" class="slot" value="Morning"> Morning<br>
+                                  <input type="radio" name="slot" class="slot" value="Midday"> Midday<br>
+                                  <input type="radio" name="slot" class="slot" value="Afternoon"> Afternoon<br>
                                   <br>
 
                                   <input class="form-control" type="text" id="jobDescription" name="jobDescription" value="" placeholder="job description"><br>
@@ -127,7 +126,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-         <button class="schedule btn btn-outline-primary" type="button" name="button">Sumbit</button>
+         <button class="schedule btn btn-outline-primary" type="button" name="button">Submit</button>
       </div>
     </div>
   </div>
@@ -142,7 +141,7 @@
                     <th>lastName</th>
                     <th>contactDetails</th>
                     <th>email</th>
-                    <th></th>
+                    <td></td>
                 </tr>
                 {{#each plumber}}
                 <tr>

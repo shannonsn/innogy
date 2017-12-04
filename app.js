@@ -37,18 +37,41 @@ $('.submit').on('click', () => {
 
 var plumberID = null;
 
-$(".display").on("click", (event)=>{
+$(".display").on("click", (event) => {
     plumberID = event.target.value;
 })
 
+
 $(".schedule").on("click", (event) => {
+    // var days = document.getElementsByClassName("day").value
+    // var selectedDay = [];
+    //
+// var days = document.querySelectorAll('.days')
+//     for (var i = 0; i < days.length; i++) {
+//         days[i]
+//         if (days[i].checked == true){
+//             selectedDay.push(days[0])
+//         }
+//     }
+
+
+    // days.forEach(function(day){
+    //     if (day.checked == true) {
+    //         selectedDay = day.value;
+    //     }
+    // });
+
+
     var employee = {
-        day: document.querySelector(".day").value,
+        day: document.querySelector('.day').value,
         slot: document.querySelector(".slot").value,
         jobDescription: document.querySelector("#jobDescription").value,
         employerName: document.querySelector("#employerName").value,
         employerContact: document.querySelector("#employerContact").value
     }
+    // console.log(employee.day)
+
+
     $.ajax({
         type: "POST",
         url: "https://innogy-api.herokuapp.com/api/" + plumberID + "/booking",
@@ -57,5 +80,7 @@ $(".schedule").on("click", (event) => {
             location.reload(forceGet);
         },
     })
-alert("your plubmer is on there way")
+
+    // console.log(employee.day);
+    alert("your plumber is on their way")
 })
